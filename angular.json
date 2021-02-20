@@ -25,7 +25,12 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/leaflet/dist/images/",
+                "output": "./assets"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "leaflet-example"
+    }
+  },
+  "defaultProject": "leaflet-example",
+  "cli": {
+    "analytics": "1f6718f1-77fc-40a4-a01f-9cd06eb3e9b8"
+  }
 }
